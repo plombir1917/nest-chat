@@ -20,7 +20,6 @@ getMessages();
 
 //Когда пользователь нажимает клавишу enter key, отправляем сообщение.
 msgBox.addEventListener('keydown', (e) => {
-  console.log(e.key);
   if (e.keyCode === 13) {
     sendMessage({ email: email.value, text: e.target.value });
     e.target.value = '';

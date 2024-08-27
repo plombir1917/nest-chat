@@ -25,7 +25,7 @@ export class AppGateway
   }
 
   afterInit(server: Server) {
-    console.log(server);
+    console.log(server.sockets.adapter.rooms);
     //Выполняем действия
   }
 
